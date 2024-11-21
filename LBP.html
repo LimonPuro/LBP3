@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Layout</title>
+  <title>Tooltip Example</title>
+  <link rel="stylesheet" href="styles.css">
+
+    <!-- Import Archivo Black Font -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+    </style>
+
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Overall Layout */
+    body {
+      font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+      background-color: #065f2e59;
+      background-image: url('https://i.pinimg.com/564x/8b/31/8f/8b318f46d99f92c9ff626fc23a012ec1.jpg');
+      background-size: repeat;
+      padding: 20px;
+      margin-bottom: 200%; /* Force scrollbars */
+    }
+
+    /* Top Image */
+    .top-image {
+      width: 100%;
+      height: 400px;
+      background-image: url('https://i.postimg.cc/pLYyXKDz/imagen-2024-10-11-193639151.png');
+      background-size: repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .top-image img {
+      width: auto;
+      height: 100%;
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    /* Text Section */
+    .text-section {
+      font-family: 'Archivo Black', sans-serif; 
+      font-size: 29px;
+      text-align: center;
+      color: rgb(255, 133, 32);
+      margin: 40px 60px;
+      height: 50px;
+      background-color: rgba(57, 215, 255, 0.404);
+      background-position: center;
+      border: 3px double white;
+
+            /* Outline effect using text-shadow */
+            text-shadow: 
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #ffffff,
+        -1px  1px 0 #ffffff,
+         1px  1px 0 #ffffff;
+    }
+
+        /* Text Section 2*/
+        .text-section2 {
+      text-align: center;
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      margin: 200px 0;
+      margin-left: 10%;
+      background-color: rgb(255, 255, 255);
+      width: 1000px;
+      height: 90px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 19px;
+    }
+
+    /* Main Content */
+    .content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    /* Footer */
+    footer {
+      background: url('https://i.pinimg.com/564x/d7/93/a5/d793a5c74bb868e3e870e3bccc56005f.jpg');
+      background-size: repeat;
+      border: groove;
+      padding: 25px;
+      text-align: center;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .bottom-text {
+      font-size: 18px;
+      color: rgb(0, 0, 0);
+    }
+
+    /* Sources box */
+    .sources-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 250px;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 2px solid #acf9ff;
+      border-radius: 10px;
+      font-size: 14px;
+      color: black;
+    }
+
+    .sources-box a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .sources-box a:hover {
+      text-decoration: underline;
+    }
+
+
+  /* General styling for all images */
+img {
+  display: block; /* Ensure each image is on a separate line (remove if you want them inline) */
+  max-width: 100%; /* Ensure images don't overflow the page */
+}
+
+/* Image 1 - custom size, centered margin, and no rotation */
+#sticker-1 {
+  width: 100px; /* Set width */
+  height: 200px; /* Set height */
+  margin-bottom: 500px; /* Center the image with margin all around */
+  transform: rotate(45deg); /* No rotation */
+}
+
+/* Image 2 */
+#sticker-2 {
+  width: 500px;
+  height: 300px;
+  margin: 50px 100px 0 50px; /* Top, right, bottom, left margins */
+  transform: rotate(15deg); /* Rotates the image by 15 degrees */
+}
+
+/* Image 3 - smaller size, rotation, and different margins */
+#sticker-3 {
+  width: 250px;
+  height: 150px;
+  margin: 30px 50px 30px 100px; /* Custom margins */
+  transform: rotate(-10deg); /* Rotates image by -10 degrees (counterclockwise) */
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Sources box positioned at the bottom-right corner -->
+  <div class="sources-box">
+    <h4>SOURCES</h4>
+    <p><a href="https://www.reddit.com/r/littlebigplanet/comments/frto5p/hey_so_why_does_everyone_hatedislike_little_big/" target="_blank">Reddit Post</a></p>
+    <p><a href="https://www.youtube.com/watch?v=6I76ZspgyEw" target="_blank">YouTube Video 1</a></p>
+    <p><a href="https://www.youtube.com/watch?v=EnvEH0r-Hnw" target="_blank">YouTube Video 2</a></p>
+    <p><a href="https://www.youtube.com/watch?v=UNMYU8Fgtqs" target="_blank">YouTube Video 3</a></p>
+  </div>
+
+  <!-- Top Image Section -->
+  <header class="top-image">
+    <img src="https://i.postimg.cc/3JRpdSL7/lbpp.jpg" alt="Top Image">
+    <div class="text-section">
+      <!-- Text for the first header -->
+      The Buggy & The Glitchy Of LittleBigPlanet3
+    </div>
+    
+    <div class="text-section2">
+      <!-- Text for the second header -->
+      LittleBigPlanet (a.k.a LBP) is a creative platform video game created By Media Molecule, published on the 27th of October 2008.                                                               
+    </div>
+  </header>
+
+<!-- Main Content Section with 6 scrollable text boxes and images -->
+<div class="content">
+  <!-- Scrollable Text Box 1 -->
+  <div class="scrollable-text scrollable-text-1">
+    <h3>Profile corruptions</h3>
+    <h5>Profile corruption usually happens when hardware safety fails to save a file and loses it completely, a factor that affects the hardware safety are self-implanted community mods; these mods usually contain cheats that allow you to use creative mode tools to use in community, story levels or even in the ‘Pod’. Mods not only had a cheat menu, but some were hacked DLC’ s or even corrupted objects. 
+      In LBP3 this Profile’s corruption happens all the time to all players, whether the hardware safety failed or they had Mods in their profile even if they intended not to and caused it to fail. This affected the player base negatively, causing players to permanently lose all their game process, objects/clothes and levels refusing to play the game losing all motivation to keep playing.
+      
+      Improve hardware safety or storage, anti corruption safeguards and implement a save your profile like the past LBP games. In terms of mods corrupting your profile there are multiple ways to improve it such as implementing a checksum validation system that consists of having every file or object in the game have a unique checksum that the game can verify. If the checksums don’t match the game’s original data, flag or quarantine those files. Although this might be incredibly time consuming due to the amount of files in the game. Another method is regular Integrity checks: Implementing a system that regularly scans user profiles for unauthorised modifications or DLC hacks. This can be done by checking the integrity of the files to ensure no modifications have been made. Ultimately, implementing a mandatory Integrity scan at load: Before the game loads a user’s profile, it should scan for mods and hacks. If detected, it should not load the modded files and provide the player an option to restore to a previous, unmodified save.
+      
+      This would restore player confidence and motivate them to engage with the game more consistently.
+      </h5>
+  </div>
+  <div id="image-1" class="image-section">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YH5jT-EQ3ug" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Video originally from https://www.youtube.com/@Ayee</h3>
+  </div>
+
+  <!-- Scrollable Text Box 2 -->
+  <div class="scrollable-text scrollable-text-2">
+    <h3>Online not functional, buggy launch</h3>
+    <h5>In LBP3, online mode is incredibly glitchy such as not being able to join people properly, laggy, long loading screens and getting kicked out of the game. The cause of this is not the players network since this was never a problem in LBP past games. A possible reason for this might be the servers infrastructure, LBP3 may suffer from inadequate server resources or poor load balancing, which can cause lag and disconnections, especially if too many players are accessing the servers at the same time. Another possibility is unoptimized code, bugs and inefficiencies in the online networking code might also lead to slow performance. Issues with how the game handles syncing player actions, data transfers, or object sharing online can cause long load times and connection instability.
+
+      By optimising the LBP3’s online network code could reduce glitches and lag, improving overall stability. A smoother online experience would encourage more collaboration and community interaction, enhancing the game's multiplayer appeal and longevity.
+      </h5>
+  </div>
+  <div id="image-2" class="image-section">
+    <iframe width="560" height="315"  src="https://www.youtube.com/embed/FprgL0FUD0Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Video originally from https://www.youtube.com/@peltsi9184</h3>
+  </div>
+
+  <!-- Scrollable Text Box 3 -->
+  <div class="scrollable-text scrollable-text-3">
+    <h3>Stolen levels/Spam levels</h3>
+    <h5>In LBP3 and across all the games but mostly LBP3 there was a problem with levels getting copied from a creator causing them to lose recognition and in some cases, people not even knowing who the original creators are due to the spam and flood of copied levels. 
+
+      A possible solution for this is a system that tags the levels of the creator, whether a simple symbol demonstrating is the creator's own level or a text, almost like a copyright system.
+      
+      If this is too consistent due to spammers, implement a community moderation where players can report levels, and moderators can intervene to either remove the infringing content or reassign credit to the original creator. This system not only will help with copied levels but also levels that inflict the community guidelines and foster a more respectful and creative community. Combined with a reporting and moderation system, this would discourage plagiarism and increase trust within the creator community.
+      </h5>
+  </div>
+  <div id="image-3" class="image-section">
+    <img src="https://i.postimg.cc/fyqFxMfv/imagen-2024-10-26-165007262.png" alt="Image 3">
+  </div>
+
+  <!-- Scrollable Text Box 4 -->
+  <div class="scrollable-text scrollable-text-4">
+    <h3>Long loading screens.</h3>
+    <h5>As previously said, in LBP3 there is an issue of long and annoying loading screens during online play mode. This loading screen did not only appear when playing with other players but when only playing on your own. This happened when searching for levels or loading into them. 
+
+      The possible reason for this issue may be asset streaming and optimization Issues: LBP3 levels often contain a large number of custom objects, textures, and scripts. If the game isn't efficiently managing memory or streaming assets, it can result in long loading times. Another reason could be an unoptimized engine, which seems to be a constant issue within the game: The game engine itself might not be optimised to handle larger, more complex levels, resulting in long loading screens, even if the underlying hardware could theoretically handle it. To improve this issue, implementing asset optimization in the game, compressing or optimising level assets (like textures and objects) before loading them could help reduce load times. As well as an optimised engine and asset streaming.
+      Players could move between levels faster, making the game more fluid and enjoyable. This would also improve the game’s accessibility for players who prefer quick, uninterrupted gameplay.</h5>
+  </div>
+  <div id="image-4" class="image-section">
+    <iframe width="560" height="315"  src="https://www.youtube.com/embed/hINkoVReBIo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Video originally from https://www.youtube.com/@DiamondProAlpine</h3>
+  </div>
+
+  <!-- Scrollable Text Box 5 -->
+  <div class="scrollable-text scrollable-text-5">
+    <h3>Thermometer is filled incredibly fast.</h3>
+    <h5>In LBP3 compared to the past games have an incredibly limited space in creating mode, causing the thermometer (The Thermometer is a game mechanic within Create Mode. It indicates the overall capacity of a level within Create Mode. Stickers & Decorations, Materials, Objects, and other items fill the capacity of the thermometer.) to fill up super easily that unabled players to create long or high detailed levels which sometimes resulted in laggy games. In the worst cases, when loading a level from past games such as LBP2 and LBP1 can result in unplayable gameplay or overall a broken level.
+
+      The cause of this could be an unoptimized engine for complex creations, while LBP3 introduced more tools and options, the engine might not have been fully optimised to handle the increased complexity. This leads to lag and limits on how detailed or large levels can be. This could be improved by implementing a better memory management: By optimising the game’s memory management, it could allow for more objects and complexity without hitting the thermometer limit too quickly. 
+      
+      Although LBP3 had a “solution” to this issue which was the implementation of “Infinite mode” that consisted of unloading items or objects that weren’t within the screen. Although it was a good idea it was executed poorly due to its poor optimization, resulting in lagging specifically when playing with other players.
+      
+      Players would be able to create more complex and detailed levels without worrying about performance drops or game-breaking lag. This would stimulate more intricate and expansive creations, leading to a more vibrant and diverse array of player-made content.
+      </h5>
+  </div>
+  <div id="image-5" class="image-section">
+    <img src="https://i.postimg.cc/x1QdQ7T1/imagen-2024-11-21-221136042.png" alt="LBP3 Thermometer Overheated" alt="Image 5">
+  </div>
+
+  <!-- Scrollable Text Box 6 -->
+  <div class="scrollable-text scrollable-text-6">
+    <h3>Proper collaborations with other creators.</h3>
+    <h5>A feature that was meant to be in LBP2 but was removed before it was published was a possible ‘clans’. The purpose of this feature isn’t clearly known, but possible theories such as making “earths” only dedicated to publishing levels with other players in the same ‘earth' and being named ‘clans’. This possible feature could have been implemented a bit more differently to make collaboration levels with other players. Although players collaborated with other players this could have been only uploaded by the host on their own earth and only being accessed to it. Implementing a feature that will allow players to share their level with other players in their ‘moons’ without requiring a leader to access the level can facilitate collaborative levels and expand its creative process. If the level needs to be published, all players must agree to it in order for it to be published on their moons.
+
+      This would enhance the creative process, allowing players to co-create levels more seamlessly. This would not only streamline teamwork but also promote a sense of shared ownership and community in collaborative projects, fostering larger-scale, multi-player creations.</h5>
+  </div>
+  <div id="image-6" class="image-section">
+    <img src="https://i.postimg.cc/HkjW0k1c/imagen-2024-10-26-162255910.png" alt="Image 6">
+    <h3>Photo taken from a video: https://www.youtube.com/watch?v=ypfzkrrwUzM</h3>
+    <h4> This video is a showcase of the LBP2 early main menu concept style</h4>
+    <img src="https://i.postimg.cc/zBfjxtKp/imagen-2024-10-26-163405869.png" alt="Image 6">
+  </div>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="bottom-text">
+      <p class="tooltip">❤️
+        <span class="tooltiptext">R.I.P LBP servers ;(</span>
+        <h2>Created By Priscila Arguello</h2>
+        <h3>Twitter: @LimonPuroo<h3>
+
+      </p>
+    </div>
+  
+</body>
+</html>
+

@@ -1,0 +1,287 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Overall Layout */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the container */
+  .top-image {
+    width: 100%;
+    height: 400px;
+    background-color: #f0f0f0;
+    background-image: url('your-background-image.jpg');
+    background-size: repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Center and contain the image without stretching */
+  .top-image img {
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+  .text-section, .text-section2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+  }
+  
+  .text-section {
+    bottom: 500px; /* Adjust spacing from bottom as needed */
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .text-section2 {
+    bottom: 200px; /* Adjust spacing for the second text as needed */
+  }
+  
+  /* Main Content */
+  .content {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .image-section {
+    width: 45%;
+  }
+  
+  /* Repeating Sections */
+  .repeating-sections .section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+/* Footer */
+footer {
+  background-color: #acf9ff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.bottom-text {
+  font-size: 18px;
+  color: black;
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Sources Box */
+.sources-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #acf9ff;
+  border-radius: 10px;
+  font-size: 14px;
+  color: black;
+}
+  
+  .sources {
+    margin-bottom: 10px;
+      position: fixed;
+  }
+  
+  /* Background Styling */
+  body {
+    background-image: url('your-background-image.jpg');
+    background-size: repeat;
+  }
+  
+/* General styles for all scrollable text boxes */
+.scrollable-text {
+  border: 2px dashed #ffffff; /* Optional border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Inner spacing */
+  overflow-y: auto; /* Enables vertical scrollbar */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  color: white; /* Text color */
+  font-size: 18px; /* Text size */
+  margin: 2%; /* Spacing around the boxes */
+  line-height: 1.5; /* Line height for readability */
+  word-wrap: break-word; /* Ensures long words are wrapped inside the box */
+}
+
+/* Individual scrollable text box styles */
+.scrollable-text-1 {
+  background: linear-gradient(to bottom, rgba(255, 99, 132, 0.5), rgba(54, 162, 235, 0.5)); /* Pink and blue gradient */
+  margin-left: 1%; /* Adjusting margin */
+  margin-top: 12%;
+  width: 50%; /* Box width */
+    height: 300px; /* Fixed height */
+}
+
+.scrollable-text-2 {
+  background: linear-gradient(to bottom, rgba(255, 206, 86, 0.5), rgba(75, 192, 192, 0.5)); /* Yellow and teal gradient */
+  margin-left: 1%; /* Different margin */
+  width: 40%; /* Box width */
+  height: 235px; /* Fixed height */
+}
+
+.scrollable-text-3 {
+  background: linear-gradient(to bottom, rgba(153, 102, 255, 0.5), rgba(255, 159, 64, 0.5)); /* Purple and orange gradient */
+  margin-right: 1%; /* Different margin */
+  width: 50%; /* Box width */
+  height: 250px; /* Fixed height */
+}
+
+.scrollable-text-4 {
+  background: linear-gradient(to bottom, rgba(75, 192, 192, 0.5), rgba(255, 99, 132, 0.5)); /* Teal and pink gradient */
+  margin-left: 1%; /* Adjusted margin */
+  width: 40%; /* Box width */
+  height: 250px; /* Fixed height */
+}
+
+.scrollable-text-5 {
+  background: linear-gradient(to bottom, rgba(54, 162, 235, 0.5), rgba(255, 206, 86, 0.5)); /* Blue and yellow gradient */
+  margin-right: 1%; /* Adjusted margin */
+  width: 40%; /* Box width */
+  height: 350px; /* Fixed height */
+}
+
+.scrollable-text-6 {
+  background: linear-gradient(to bottom, rgba(255, 159, 64, 0.5), rgba(153, 102, 255, 0.5)); /* Orange and purple gradient */
+  margin-left: 1%; /* Adjusted margin */
+  width: 50%; /* Box width */
+  height: 280px; /* Fixed height */
+}
+
+/* Image Section General Styles */
+.image-section {
+  width: 45%;
+  margin-bottom: 20px; /* Spacing between image and text sections */
+}
+
+/* Individual Image Styles */
+
+/* Image 1 */
+#image-1 {
+  margin-left: 1%;
+  margin-top: 12%;
+  width: 40%;
+  border: 10px dotted #ffffff;
+  background-color: rgba(5, 6, 71, 0.507);
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  flood-color: pink;
+}
+
+/* Image 2 */
+#image-2 {
+  margin-left: 1%;
+  width: 40%;
+  border: 10px dotted #ffffff;
+  background-color: rgba(5, 6, 71, 0.507);
+  border-radius: 15px;
+  text-align: center;
+  position: flex;
+}
+
+/* Image 3 */
+#image-3 {
+  margin-left: 1%;
+  width: 25%;
+  border: 10px dotted #ffffff;
+  background-color: rgba(5, 6, 71, 0.507);
+  border-radius: 15px;
+  text-align: center;
+  position: flex;
+}
+
+/* Image 4 */
+#image-4 {
+  margin-left: 1%;
+  width: 40%;
+  border: 10px dotted #ffffff;
+  background-color: rgba(5, 6, 71, 0.507);
+  border-radius: 15px;
+  text-align: center;
+  position: flex;
+}
+
+/* Image 5 */
+#image-5 {
+  margin-left: 1%;
+  width: 5%;
+  border: 10px dotted #ffffff;
+  background-color: rgba(5, 6, 71, 0.507);
+  border-radius: 15px;
+  text-align: center;
+  position: flex;
+}
+
+/* Image 6 */
+#image-6 {
+  margin-left: 1%;
+  width: 35%;
+  border: 10px dotted #ffffff;
+  background-color: rgba(5, 6, 71, 0.507);
+  border-radius: 15px;
+  text-align: center;
+  position: flex;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(22, 141, 22, 0.3); /* Semi-transparent track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.822); /* Semi-transparent scrollbar thumb */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(181, 255, 147, 0.7); /* Darker on hover */
+}
+
